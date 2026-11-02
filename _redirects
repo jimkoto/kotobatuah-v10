@@ -1,0 +1,20 @@
+# Anti double canonical www -> non-www
+https://www.kotobatuah.com/* https://kotobatuah.com/:splat 301
+
+# Blogs / Artikel Pilar -> Lead Form anchor di homepage
+/blogs/ /#lead-form 301
+/blogs/* /#lead-form 301
+/artikel-pilar/ /#lead-form 301
+/lead/ /#lead-form 302
+/lead-form/ /#lead-form 302
+
+# Shortlink koto.biz.id yang akan dipasang di QR kios (jaga-jaga kalau ada yang akses via main domain)
+/wa https://chat.Jimkoto.my.id 302
+/chat https://chat.Jimkoto.my.id 302
+
+# Gadgets review silo tetap accessible tapi tidak di menu utama (rahasia dapur)
+/gadgets_review/ /gadgets_review/index.html 200
+/gadgets_review/* /gadgets_review/index.html 200
+
+# Fallback SPA
+/* /index.html 200
